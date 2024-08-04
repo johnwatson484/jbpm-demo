@@ -1,5 +1,5 @@
 services:
-  hapi-template:
+  jbpm-demo-web:
     command: >
       sh -c "npm run test:watch"
     volumes:

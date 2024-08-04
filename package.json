@@ -1,5 +1,5 @@
 {
-  "name": "hapi-template",
+  "name": "jbpm-demo-web",
   "version": "1.0.0",
   "description": "",
   "main": "app/index.js",

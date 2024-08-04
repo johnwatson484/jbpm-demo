@@ -1,5 +1,5 @@
 # Development
-FROM node:18-alpine AS development
+FROM node:20-alpine AS development
 ENV NODE_ENV development
 ARG PORT=3000
 ENV PORT ${PORT}
@@ -14,7 +14,7 @@ RUN apk update && \
 USER node
 WORKDIR /home/node
 COPY --chown=node:node package*.json ./
-RUN npm install --production=false
+RUN npm install
 COPY --chown=node:node ./app ./app
 COPY --chown=node:node ./test ./test
 COPY --chown=node:node ./.git ./.git

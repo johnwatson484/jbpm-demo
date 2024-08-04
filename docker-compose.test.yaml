@@ -1,9 +1,9 @@
 services:
-  hapi-template:
+  jbpm-demo-web:
     build:
       target: development
-    image: hapi-template-development
-    container_name: hapi-template-test
+    image: jbpm-demo-web-development
+    container_name: jbpm-demo-web-test
     command: npm run test
     volumes:
       - ./app:/home/node/app
